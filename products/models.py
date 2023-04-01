@@ -7,7 +7,7 @@ class Product(models.Model):
     price = models.IntegerField(default=0)
     created_at = models.DateTimeField(auto_now=True)
     updated_at = models.DateTimeField(auto_now_add=True)
-    categories = models.ManyToManyField(Category)
+    categories = models.ManyToManyField(Category, blank=True)
     owner = models.ForeignKey(
         'auth.User', related_name='products', on_delete=models.CASCADE
     )
