@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'django_dump_die',
     'authentication',
     'products',
+    'categories',
 ]
 
 MIDDLEWARE = [
